@@ -32,15 +32,15 @@ class Graph:
         return False
 
 
+
 example_graph = Graph(4)
 example_graph.insertEdge(0, 1)
-example_graph.insertEdge(0, 2)
 example_graph.insertEdge(1, 3)
-example_graph.insertEdge(2, 3)
-example_graph.insertEdge(3, 3)
+example_graph.insertEdge(2, 0)
+example_graph.insertEdge(2, 1)
 
-s = 0
-d = 3
+s = 3
+d = 2
 
 if example_graph.checkRoute(s, d):
     print(f'There is a route between {s} and {d}')
